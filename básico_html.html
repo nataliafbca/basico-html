@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<!-- TAG <head>/cabeçalho 'armazena' informações da página -->
+	<meta charset="UTF-8">
+	<title>Básico HTML</title> 
+	<!-- Título da página -->
+	<style>
+		body {
+			background: black;
+			color: white;
+		}
+
+		h1 {color: pink}
+		a {color: aqua}
+		table {border-color: white}
+
+
+	</style>
+	<!-- TAG <style> - estilo da página -->
+</head>
+
+<body> <!-- TAG <body> - corpo da página -->
+	<header><h3>Olá, mundo!</h3></header> <!-- TAG <header> - cabeçalho da página dentro de <body> -->
+
+	<p><h3>Eis aqui formatação básica de HTML.</h3></p> <!-- TAG <p> - parágrafo -->
+	<br> <!-- TAG <br> - quebra de linha -->
+	<hr> <!-- TAG <hr> - cria uma linha horizontal que atravessa de uma borda, até outra derrapagem -->
+	<h1>Formatações de parágrafos</h1> 
+	<!-- TAGS <h1> à <h6> para títulos/textos destaques.
+		 quanto maior o número, menor o texto -->
+	<div> <!-- A TAG <div> permite a inserção de divisórias nas páginas -->
+	    <b>Texto em negrito</b><br>
+	    <i>Texto em itálico</i><br>
+	    <u>Texto sublinhado</u><br>
+	    <sub>Texto subscrito</sub><br>
+	    <sup>Texto sobrescrito</sup><br>
+	    <big>Texto com fonte maior do que o padrão</big><br>
+	    <small>Texto com fonte menor do que o padrão</small><br>
+	    <em>Texto em itálico</em><br>
+	    <strong>Texto em negrito</strong>
+	</div>
+	<br>
+	<hr>
+
+	<h1>Fontes no html</h1>
+
+		<!-- Declarando uma única fonte com o atributo style dentro da TAG <p> -->
+		<p style="font-family: 'Arial'">Olá, mundo!</p> 
+
+		<p style="font-family: 'Algerian'">Olá, mundo!</p>
+
+		<p style="font-family: 'Segoe Print'">Olá, mundo!</p>
+	<br>
+	<hr>
+
+	<h1>Imagens</h1>
+		<!-- Inserir imagem - TAG <img> com o atributo src="": nome/endereço da imagem -->
+		<img src="gatas.jpeg" width="250px"> <img src="boyfriend.jpeg" width="250px" height="333px">
+		<!-- atributos width = largura / height = altura -->
+	<br><br>
+	<hr>
+
+	<h1>Link</h1>
+		<a href="https://www.instagram.com/nataliafbc/">Instagram Natalia</a>
+	<br><br>
+	<hr>
+
+	<h1>Listas</h1>
+
+	<h3><u>Lista ordenada</u></h3>
+		<ol> <!-- TAG <ol> para listas ordenadas -->
+			<li>Primeiro</li> <!-- TAG <li> para cada item da lista -->
+			<li>Segundo</li>
+			<li>Terceiro</li>
+		</ol>
+		<br>
+
+	<h3><u>Lista não ordenada</u></h3>
+		<ul> <!-- TAG <ul> para listas não ordenadas -->
+			<li>Primeiro</li>
+			<li>Segundo</li>
+			<li>Terceiro</li>
+		</ul>
+	<br>
+	<hr>
+
+	<!-- TAG <table> para criação de tabela.
+	Cada linha deve ser declarada com a tag <tr> e cada célula com a tag <td>. 
+
+	Opcionalmente pode-se usar a tag <th> para declarar células que representem a linha de cabeçalho. -->
+
+	<h1>Tabela</h1>
+		<table border="2">
+			<tr>
+				<th>Nome</th>
+				<th>Idade</th>
+				<th>Telefone</th>
+			</tr>
+			<tr>
+				<td>Natalia</td>
+				<td>24</td>
+				<td>(11)091111-1111</td>
+			</tr>
+		</table>
+	<br>
+	<hr>
+
+	<h1>Formulários</h1>
+	<!-- TAG <form> para criar formulário, utilizando os atributos:
+	action (indica para qual página será enviado)
+	method (ex. method="post" - enviado 'ocultamente'
+				method="get" - envio por url) -->
+		<form action="natalia.php" method="post">
+			<label>Usuário</label> <!-- TAG <label> rótulo/nome do input.
+			Todo input recebe um atributo type e name.
+			Placeholder exibe uma mensagem no campo de preenchimento. -->
+			<input type="text" name="usuario" placeholder="Digite seu nome de usuário">
+			<br><br>
+
+			<label>E-mail</label>
+			<input type="text" name="email" placeholder="Digite seu e-mail">
+			<br><br>
+
+			<label>Senha</label>
+			<input type="password" name="senha" placeholder="Digite sua senha">
+			<br><br>
+
+			<label>Cidade</label>
+			<select name="cidades">
+				<option>Boiçucanga</option>
+				<option>Mauá</option>
+				<option>Santo André</option>
+				<option>São Paulo</option>
+			</select>
+			<br><br>
+
+			<label>Contato</label>
+			<input type="text" name="contato1" placeholder="(11) 9xxxx-xxxx">
+			<br><br>
+
+			<input type="radio" name="operadora" value="1">Vivo
+			<input type="radio" name="operadora" value="2">Tim
+			<input type="radio" name="operadora" value="3">Claro
+			<input type="radio" name="operadora" value="4">Oi
+			<input type="radio" name="operadora" value="5">Nextel
+			<br><br>
+
+			<label>Desejo receber contato através de:</label>
+			<br><br>
+			<input type="checkbox" name="conto2" value="1">Telefone
+			<br>
+			<input type="checkbox" name="conto2" value="2">WhatsApp
+			<br>
+			<input type="checkbox" name="conto2" value="3">E-mail
+			<br><br>
+		</form>
+			<button>Enviar</button>
+
+	<footer></footer>
+<!-- foother - rodapé da página -->
+
+</body>
+</html>
